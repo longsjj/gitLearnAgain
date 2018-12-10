@@ -13,5 +13,8 @@
 12,git add 只是把文件提交到暂存区，而并未提交仓库
 13,git checkout -- file 可以丢弃工作区的修改,回到系统前一个版本或者是暂存区的版本
 14,git reset HEAD <file>可以把暂存区的修改撤销掉(unstage)
+15,rm file 可以删除文件
+16,git rm file是从版本库中删除文件
+17,git checkout -- file 其实是用版本库里面的文件替换工作区的文件。
 
 
