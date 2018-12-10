@@ -12,6 +12,6 @@
 11,git rest --hard reflog记录i
 12,git add 只是把文件提交到暂存区，而并未提交仓库
 13,git checkout -- file 可以丢弃工作区的修改,回到系统前一个版本或者是暂存区的版本
-14,
+14,git reset HEAD <file>可以把暂存区的修改撤销掉(unstage)
 
 
