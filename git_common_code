@@ -17,4 +17,16 @@
 16,git rm file是从版本库中删除文件
 17,git checkout -- file 其实是用版本库里面的文件替换工作区的文件。
 
+远程仓库:
+ssh-keygen -t rsa -C ""填上自己的邮箱
+
+如果用github作为服务器的化，需要在github的个人设置中将本地文件中id_rsa.pub文件内容复制到SSH中，即可
+
+如果需要搭建本地的git 服务器的化，也可以自己搭
+
+本地推送git到远程库中
+git remote add origin git@github.com:longsjj/gitLearnAgain.git
+git push -u origin master
+
+
 
