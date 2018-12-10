@@ -4,9 +4,9 @@
 4，ls -ah 可以看隐藏目录
 5,git add 文件,添加Git仓库的第一步
 6,git commit -m '注释说明'
-7,git status 此命令可以让我们时刻掌握仓库当前的状态
+7,git status 此命令可以让我们时刻掌握仓库当前的状态，可以随时查看仓库的状态
 8,git diff <某个文件> 查看指定文件的变化或者所有文件的变化
-
+9,git log <--pretty=oneline>命令显示从最近到最远的提价日志，
 
 
 
