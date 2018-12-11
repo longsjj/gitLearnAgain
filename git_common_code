@@ -62,3 +62,6 @@ git branch -d 分支，删除分支
 
 git log --graph 可以看到分支合并图。
 
+
+anther branch manage
+
