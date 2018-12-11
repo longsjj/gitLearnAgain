@@ -39,3 +39,14 @@ https://github.com/michaelliao/gitskills.git
 而你在自己的分支上干活，想提交就提交，直到开发完毕后，再一次性合并到原来的分支上，这样，既安全，
 又不影响别人工作。
 
+master指向主分支，head指向master,
+当我们创建新的分支，例如dev时，Git新建了一个指针叫dev，指向master相同的提交，再把HEAD指向dev，就表示当前分支在dev上：
+
+20,git checkout -b dev  首先，我们创建dev分支，然后切换到dev分支：
+
+git branch dev创建分支
+git checkout dev切换分支
+
+git branch 查看当前分支
+
+
