@@ -75,4 +75,6 @@ git merge --no-ff -m "merge with no-ff" dev
 
 你和你的小伙伴们每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了。
 
+git stash Git还提供了一个stash功能，可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作
+
 
