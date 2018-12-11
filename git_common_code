@@ -51,4 +51,8 @@ git branch 查看当前分支
 
 git checkout master 切换到主分支
 
-do some not important
+git merge 分支，合并分支到当前分支，采用Fast-forward
+
+git branch -d 分支，删除分支
+
+冲突的解决,需要手动解决
