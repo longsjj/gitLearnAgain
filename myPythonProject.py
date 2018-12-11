@@ -5,6 +5,7 @@ class Solution(object):
 
     def solution(self,arr):
 
+
         if len(arr)==1:
             return arr[0]
 
