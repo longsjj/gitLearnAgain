@@ -1,0 +1,38 @@
+step 1: 安装 Git-2.15.1.2-64-bit.exe
+
+step 2: git config --global user.name "Your name"
+        git config --global user.email "Your email"
+
+step 3: mkdir cd pwd  'git init'  
+        tips:
+		1，版本控制系统只能跟踪文本文件的改动，不能跟踪二进制文件的内容变化
+		2，编程最好不要用txt文件，会有一个文件头
+
+step 4: git add file | fold   ，Unix的哲学"没有消息就是好消息"
+        git commit -m '添加文件说明' ， -m 后面跟的是对这次提交的说明， commit 操作一次可以添加多个文件
+
+step 5: git status 此命令可以让我们时刻掌握仓库当前的状态
+        git diff 顾名思义就是查看difference的意思，显示的格式正是Unix通用的diff格式
+		git log 查看历史记录，一大串类似3628164...882e1e0的是commit id（版本号），是一个SHA1计算出来的一个非常大的数字，用十六进制表示
+		    tips: 按Q键退出
+		git reset --hard HEAD^  在git中HEAD表示当前版本，上一个版本就是HEAD^，上上版本就是HEAD^^,上100个版本HEAD~100 阿斯蒂芬
+		    tips: 1，如果还想退回去，只要上面的命令行窗口还没有关掉，就可以通过 git reset --hard 3628164……找回来
+			      2，git reflog查看命令历史，以便确定要回到未来的哪个版本
+
+step 6: 工作区和暂存区，
+		1，就是你在电脑里能看到的目录，比如我的learngit文件夹就是一个工作区：
+		2，工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。stage(或者叫index)的暂存区，
+		   还有GIT为我们自动创建的第一个分支master,以及指向master的指针HEAD
+		3，第一步git add 把文件添加进去，实际上就是把文件修改添加到暂存区，第二步git commit 提交更改，
+		   实际上就是把暂存区的所有内容提交到当前分支因为我们创建Git版本库时，Git自动为我们创建了唯一
+		   一个master分支，所以，现在，git commit就是往master分支上提交更改。
+		4，记住每次修改都要执行git add file,别急着commit
+
+step 7: 撤销修改，git checkout -- file，这个命令可以撤销在工作区对文件的修改，就是让这个文件回到最近一次git commit或git add时的状态
+        文件已经git add了，已经在暂存区里面了，但未提交，git reset HEAD file,git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区，
+		当我们用HEAD时，表示最新的版本。
+
+step 8: 删除操作，git add test.txt git commit -m ''  git rm test.txt git commit -m '' git checkout -- test.txt
+		
+		
+		
