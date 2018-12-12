@@ -281,3 +281,23 @@ To github.com:michaelliao/learngit.git
 rebase操作可以把本地未push的分叉提交历史整理成直线；
 
 rebase的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比。
+
+git tag v1.0#其中v1.0是标签名字
+
+git tag v0.9 f52c633#给历史版本commit 打标签
+
+git tag 不是按时间顺序排的，是按字母顺序的
+
+git show <tagname>查看标签的具体信息
+
+git tag -d v0.1 标签打错了可以删除，标签创建都只存在本地，不会自动推送到远程
+git push origin v0.1
+
+git push origin --tags
+
+git tag -d v0.9
+git push origin :refs/tags/v0.9
+
+国外用github，国内用码云
+
+
