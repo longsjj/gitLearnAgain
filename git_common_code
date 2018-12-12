@@ -310,7 +310,16 @@ git remote rm origin
 用添加
 git remote add origin git@gitee.com:longsjj/gitLearn.git
 
+do not initialize the new repository with README,you can add these files after your project
+has been pushed to gitee or github
 
+git init
+git add .
+git commit -m  'some words'
+git remote -v
+git remote add gitee or github remote repository URL
+
+git push gitee or github master
 
 
 
