@@ -300,4 +300,19 @@ git push origin :refs/tags/v0.9
 
 国外用github，国内用码云
 
+如果已经关联了一个库了比如说之前已经关联了github
+
+可以用git remote -v 查看远程库的信息
+
+然后用下面代码删除
+git remote rm origin
+
+用添加
+git remote add origin git@gitee.com:longsjj/gitLearn.git
+
+
+
+
+
+
 
