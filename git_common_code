@@ -88,13 +88,15 @@ git stash pop 恢复的同时把stash内容也删了：
 git branch -D <name>
 如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>强行删除。
 
-<<<<<<< HEAD
+
 当你从远程仓库克隆时，实际上Git自动把本地的master分支和远程的master分支对应起来了，并且，远程仓库的默认名称是origin。
 git remote
 git remote -v
 git push origin master
 git push origin dev
 但是，并不是一定要把本地分支往远程推送，那么，哪些分支需要推送，哪些不需要呢？
+
+
 
 master分支是主分支，因此要时刻与远程同步；
 
@@ -277,3 +279,5 @@ To github.com:michaelliao/learngit.git
 从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
 
 rebase操作可以把本地未push的分叉提交历史整理成直线；
+
+rebase的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比。
